@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/header', {page: 'admin'}); -%>
+      <main class="p-5 content">
+        <header>
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <div class=" d-flex">
+                <h1 class="navbar-brand fw-bold">Admin</h1>
+                <button type="button" class="btn d-flex" data-bs-toggle="modal" data-bs-target="#addModal">
+                  <span class="material-symbols-outlined text-success">add</span>
+                  <p>Add New Admin </p>
+                </button>
+              </div>
+              <div class="listicon">
+                <!-- Button trigger modal -->
+                <a href=""><span class="material-symbols-outlined align-bottom">
+                  search
+                  </span></a>
+                <a href=""><span class="material-symbols-outlined align-bottom">
+                  notifications_active
+                  </span></a>
+              </div>
+            </div>
+          </nav>
+        </header>
+        
+        <section>
+          <table class="table">
+            <thead>
+              <tr class="fw-bold">
+                <th scope="col">ID<span class="material-symbols-outlined align-bottom text-success">arrow_downward</span></th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3" scope="row">#1</td>
+                <td class="py-3">Emir Wicks</td>
+                <td class="py-3">emir.wicks@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#2</td>
+                <td class="py-3">Zaina Goldsmith</td>
+                <td class="py-3">zaina.goldsmith@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#3</td>
+                <td class="py-3">Mahima Lopez</td>
+                <td class="py-3">mahima.lopez@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#4</td>
+                <td class="py-3">Pharrell Murray</td>
+                <td class="py-3">pharrell.murray@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#5</td>
+                <td class="py-3">Annika Mcbride</td>
+                <td class="py-3">annika.mcbride@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#6</td>
+                <td class="py-3">Fatimah Clark</td>
+                <td class="py-3">fatimah.clark@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#7</td>
+                <td class="py-3">Klaudia Rhodes</td>
+                <td class="py-3">klaudia.rhodes@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#8</td>
+                <td class="py-3">Tillie Lucero</td>
+                <td class="py-3">tillie.lucero@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#9</td>
+                <td class="py-3">Sabrina Stephenson</td>
+                <td class="py-3">sabrina.stephenson@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3" scope="row">#10</td>
+                <td class="py-3">Annie Smith</td>
+                <td class="py-3">annie.smith@mail.com</td>
+                <td class="py-3">Yes</td>
+                <td class="text-end">
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                  <button type="button" class="btn px-0" data-bs-toggle="modal" data-bs-target="#viewModal">
+                    <span class="material-symbols-outlined">edit</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- view Modal -->
+          <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-body d-flex">
+                  <img src="../../assets/images/emir.jpeg" alt="" width="141" height="141" class="rounded-2 object-fit-cover me-4 ">
+                  <div class="view-content w-100 d-flex flex-column justify-content-between">
+                    <div class="d-flex justify-content-between">
+                      <p>#1</p>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <p>Admin</p>
+                    <h2>Emir Wicks</h2>
+                    <a class="text-secondary" href="mailto:emir.wicks@mail.com">emir.wicks@mail.com</a>
+                    
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed p-0 fs-7 bg-body" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="p-1 bg-secondary-subtle">Verified</p>
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body text-end pt-3 pb-0 pe-0">
+                            <button type="button" class="btn text-danger border-danger border rounded-0 px-5" data-bs-dismiss="modal">Deactivate</button>
+                            <button type="button" class="btn btn-success rounded-0 px-5">Edit</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- add Modal -->
+          <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content modelhw">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">New Admin</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="border-bottom pb-3">
+                    <label for="inputname" class="form-label mb-0 fs-7">Name</label>
+                    <input type="text" id="inputname" class="form-control inputhw border-dark  rounded-0 p-3" >
+                    <label for="inputemail" class="form-label mt-3 mb-0 fs-7">Email</label>
+                    <input type="text" id="inputemail" class="form-control inputhw border-dark rounded-0" >
+                  </div>
+                  <div class="border-bottom py-3">
+                    <h2 class="fs-5 fw-bold mb-3">Verification</h2>
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined me-2 text-danger ">
+                        report_problem
+                      </span>
+                      <p class="fw-bold">Unverified</p>
+                    </div>
+                    <button class="btn btn-outline-success border w-100 py-3 fw-bold" type="button">
+                      Send Verification Mail
+                    </button>
+                  </div>
+                  <div class="border-bottom py-3">
+                    <h2 class="fs-5 fw-bold mb-3">Access Level</h2>
+                    <select class="form-select p-3 text-secondary" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>-Choose access level-</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="border-bottom py-3">
+                    <h2 class="fs-5 fw-bold mb-3">Custom Access</h2>
+                    <div class="mb-3">
+                      <input class="form-check-input border-dark me-3 rounded-0 border-2" type="checkbox" value="" id="Lecture">
+                      <label class="form-check-label" for="Lecture"> Lecture </label>
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-check-input border-dark me-3 rounded-0 border-2" type="checkbox" value="" id="Coupon">
+                      <label class="form-check-label" for="Coupon"> Coupon </label>
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-check-input border-dark me-3 rounded-0 border-2" type="checkbox" value="" id="Message">
+                      <label class="form-check-label" for="Message"> Message </label>
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-check-input border-dark me-3 rounded-0 border-2" type="checkbox" value="" id="Setting">
+                      <label class="form-check-label" for="Setting"> Setting </label>
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-check-input border-dark me-3 rounded-0 border-2" type="checkbox" value="" id="TaskMenu">
+                      <label class="form-check-label" for="TaskMenu"> Task Menu </label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn text-success border rounded-0 px-5" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success rounded-0 px-5">Add</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- num page-->
+        <nav aria-label="Page navigation example" class=" pt-6">
+          <ul class="pagination justify-content-end">
+            <li class="page-item">
+              <a class="page-link border-success" href="#" aria-label="Previous">
+                <span class="material-symbols-outlined align-bottom text-success">chevron_left</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link border-success fw-bold text-white bg-success" href="#">1</a></li>
+            <li class="page-item"><a class="page-link border-success fw-bold text-dark" href="#">2</a></li>
+            <li class="page-item"><a class="page-link border-success fw-bold text-dark" href="#">3</a></li>
+            <li class="page-item border-success">
+              <a class="page-link border-success" href="#" aria-label="Next">
+                <span class="material-symbols-outlined align-bottom text-success">chevron_right</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
